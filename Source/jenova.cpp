@@ -36,6 +36,7 @@
 
 // Windows Routine
 #ifdef TARGET_PLATFORM_WINDOWS
+	#ifndef JENOVA_STATIC_BUILD
 
 	// Windows Global Objects
 	HINSTANCE jenovaRuntimeInstance = nullptr;
@@ -58,6 +59,7 @@
 		return TRUE;
 	}
 
+	#endif
 #endif
 
 // Linux Routine
