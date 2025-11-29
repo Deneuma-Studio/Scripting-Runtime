@@ -616,7 +616,7 @@ namespace jenova
 
 						// Package Repository Path Property
 						PropertyInfo PackageRepositoryPathProperty(Variant::STRING, PackageRepositoryPathConfigPath,
-							PropertyHint::PROPERTY_HINT_NONE, "", PROPERTY_USAGE_DEFAULT, JenovaEditorSettingsCategory);
+							PropertyHint::PROPERTY_HINT_NONE, "", PROPERTY_HINT_DIR, JenovaEditorSettingsCategory);
 						editor_settings->add_property_info(PackageRepositoryPathProperty);
 						editor_settings->set_initial_value(PackageRepositoryPathConfigPath, jenova::GlobalSettings::JenovaPackageRepositoryPath, false);
 
